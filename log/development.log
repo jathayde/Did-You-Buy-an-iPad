@@ -1,0 +1,680 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-12 16:22:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-12 16:25:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:26:09) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: pages: SELECT * FROM "pages" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: pages: SELECT * FROM "pages" ):
+  app/controllers/pages_controller.rb:5:in `index'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100312212325)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100312212325')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:26:26) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 68ms (View: 65, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-12 16:26:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:27:00) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-12 16:27:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:28:21) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-12 16:28:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:28:48) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:32:15) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.3ms)
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:33:31) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:33:38) [GET]
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:33:50) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:34:10) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:34:17) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:34:18) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:34:36) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:34:54) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:35:22) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:35:51) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:37:31) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:38:03) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:38:17) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:38:29) [GET]
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:38:35) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:39:33) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:40:25) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 61ms (View: 58, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:40:58) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:41:11) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:41:33) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.3ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:41:59) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:42:15) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:42:48) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:42:58) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:43:04) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:43:39) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:43:49) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:43:55) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:44:05) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:44:14) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 59ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:44:35) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:45:16) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:45:31) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:45:50) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:47:56) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:48:50) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 64ms (View: 61, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:49:27) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:49:43) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:49:57) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:50:30) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:51:00) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:51:27) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:52:23) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:52:58) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:53:16) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:53:22) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:53:34) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:54:11) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:54:23) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:54:29) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:54:32) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:54:49) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:55:10) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:55:26) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 57ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:55:47) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:57:34) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:57:48) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:57:54) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:58:19) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 16:59:19) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:00:28) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:00:59) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:01:08) [GET]
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:01:26) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:02:15) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 63ms (View: 60, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:02:57) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:03:29) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:03:52) [GET]
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:04:41) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:05:32) [GET]
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-12 17:05:45) [GET]
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]

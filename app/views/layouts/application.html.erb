@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Did You Buy An Ipad?</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<%= stylesheet_link_tag "reset", "grid", "forms", "typography", "base" %>
+
+</head>
+ 
+<body>
+	
+	<%= render "layouts/header" %>
+	
+	<div class="container">
+		<section>
+		<%#= render_flash_messages %>
+		
+		<%= yield %>
+		</section>
+	</div>
+
+	<%#= render "layouts/footer" %>
+	
+
+
+<footer>
+	<div class="container">
+		<div class="span-24">						
+			<p>We are not affiliated with Apple in any way, this is just some fun we had on a Friday</p>
+		</div>
+	</div>
+</footer>
+	
+
+</body>
+</html>
