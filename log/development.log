@@ -760,3 +760,24 @@ Rendering template within layouts/application
 Rendering pages/index
 Rendered layouts/_header (0.2ms)
 Completed in 57ms (View: 52, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:00:56) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (23.9ms)
+Completed in 163ms (View: 72, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:01:20) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:03:12) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 24ms (View: 12, DB: 0) | 200 OK [http://localhost/?]

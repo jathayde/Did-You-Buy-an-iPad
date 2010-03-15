@@ -17,6 +17,7 @@ form fieldset						{ margin-bottom: 30px; border-top: 1px solid #e1e1e1;}
 form fieldset legend				{ font-size: 16px; padding: 0 10px 0 0; background-color: #fff;}
 form fieldset input.text	 		{ width: 60px; padding: 5px 8px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.4em; color: #333; border-top: 1px solid #e1e1e1; border-left: none; border-bottom: 1px solid #fff;
 border-right: 1px solid #fff; background-color: #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+form fieldset input.text.email {width: 300px;}
 
 form fieldset textarea 				{ width: 408px; height: 130px; padding: 5px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.2em; color: #333; border-top: 1px solid #c3c3c3; border-left: none; border-bottom: 1px solid #fff; border-right: 1px solid #fff; background-color: #f1f1f1; -webkit-border-radius: 5px; 	-moz-border-radius: 5px; border-radius: 5px; }
 
