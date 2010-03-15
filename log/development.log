@@ -753,3 +753,10 @@ Migrating to CreatePurchases (20100315010705)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-14 23:33:43) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 57ms (View: 52, DB: 0) | 200 OK [http://localhost/?]
