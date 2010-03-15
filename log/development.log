@@ -781,3 +781,98 @@ Rendering template within layouts/application
 Rendering pages/index
 Rendered layouts/_header (0.2ms)
 Completed in 24ms (View: 12, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:09:26) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 376ms (View: 366, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:09:52) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 102ms (View: 92, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:11:00) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 34ms (View: 22, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-03-15 00:11:17) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"", "buy"=>"yes", "why"=>" Because I'm sexy!", "email"=>"john@meticulous.com"}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+
+NameError (uninitialized constant PurchasesController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (23.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:12:15) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 27ms (View: 15, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-15 00:12:16) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"", "why"=>"", "email"=>""}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+
+ActionView::MissingTemplate (Missing template purchases/new.erb in view path app/views):
+  app/controllers/purchases_controller.rb:11:in `create'
+  app/controllers/purchases_controller.rb:5:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 00:12:25) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.3ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://localhost/?]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-15 00:12:27) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"", "why"=>"", "email"=>""}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+
+ActionView::MissingTemplate (Missing template purchases/new.erb in view path app/views):
+  app/controllers/purchases_controller.rb:11:in `create'
+  app/controllers/purchases_controller.rb:5:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)

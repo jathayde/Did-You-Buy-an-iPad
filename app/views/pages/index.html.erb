@@ -12,36 +12,38 @@
     </div>
     <div class="bd">      
       
-      <form>
-        <fieldset>
-          <ul>
-            <li class="inline" style="padding-left: 50px; ">
-              <label>Yes <input type="radio" name="" value="" class="radio"></label>
-              <label>No <input type="radio" name="" value="" class="radio"></label>
-            </li>
-            
-            <li class="inline center">
-              <label>Why?</label>
-              <textarea></textarea>
-            </li>
-            
-            <li class="inline center">
-              <label>Email</label>
-              <input type="text" class="text email" />
-            </li>
-
-            <li class="inline center">
-              <label>Zipcode</label>
-              <input type="text" class="text" />
-            </li>
-            
-            <li class="submit">
-              <button>Submit</button>
-            </li>
+      <% form_for @purchase do |f| -%>
+      <fieldset>
+        <ul>
+          <li class="inline" style="padding-left: 50px; ">
+            <label for="purchase_buy">Yes <%= f.radio_button :buy, :yes %></label>
+            <label for="purchase_buy">No <%= f.radio_button :buy, :no %></label>
+          </li>
           
-          </ul>          
-        </fieldset>
-      </form>
+          <li class="inline center">
+            <%= f.label :why, "Why?" %>
+            <%= f.text_area :why %>
+          </li>
+          
+          <li class="inline center">
+            <%= f.label :email, "Email" %>
+            <%= f.text_field :email, :class => "text email" %>
+          </li>
+
+          <li class="inline center">
+            <%= f.label :zip, "Zip Code" %>
+            <%= f.text_field :zip, :class => "text" %>
+          </li>
+          
+          <li class="submit">
+            <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+          </li>
+        
+        </ul>          
+      </fieldset>       
+        
+      <% end -%>
+      
     </div>
     <div class="ft">
 
