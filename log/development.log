@@ -876,3 +876,110 @@ ActionView::MissingTemplate (Missing template purchases/new.erb in view path app
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 17:36:51) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 48ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-15 17:37:04) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"20175", "buy"=>"no", "why"=>"oto much!", "email"=>"bobo@meticulous.com"}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+
+ActionView::MissingTemplate (Missing template purchases/new.erb in view path app/views):
+  app/controllers/purchases_controller.rb:11:in `create'
+  app/controllers/purchases_controller.rb:5:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 17:39:15) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 140ms (View: 45, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-15 17:39:24) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"12345", "buy"=>"yes", "why"=>"I LOVE IT", "email"=>"athayde@gmail.com"}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+Redirected to http://localhost:3002/pages
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/purchases_controller.rb:5:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-15 17:39:58) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"12345", "buy"=>"yes", "why"=>"I LOVE IT", "email"=>"athayde@gmail.com"}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+Redirected to http://localhost:3002/pages
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/purchases]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 17:39:59) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 25ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 17:40:40) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+
+ActionView::TemplateError (undefined local variable or method `render_flash_messages' for #<ActionView::Base:0x104162470>) on line #20 of app/views/layouts/application.html.erb:
+17:   
+18:   <div class="container">
+19:     <section>
+20:     <%= render_flash_messages %>
+21:     
+22:     <%= yield %>
+23:     </section>
+
+    app/views/layouts/application.html.erb:20
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-15 17:40:47) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 32ms (View: 22, DB: 0) | 200 OK [http://localhost/pages]
