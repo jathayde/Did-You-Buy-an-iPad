@@ -17,7 +17,7 @@ test:
 
 production:
   adapter: mysql
-  username: root
   database: ipad_production
+  username: root
   password: root
-  socket: /tmp/mysql.sock
+  host: localhost
