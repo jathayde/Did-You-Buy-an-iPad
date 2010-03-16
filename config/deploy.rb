@@ -1,7 +1,7 @@
 require 'capistrano/version'
 load 'deploy'
 
-set :application, "comerford"
+set :application, "ipad"
 
 set :repository,  " git@github.com:boboroshi/Did-You-Buy-an-iPad.git"
 set :deploy_to, "/var/www/railsapps/#{application}"
