@@ -983,3 +983,106 @@ Rendering template within layouts/application
 Rendering pages/index
 Rendered layouts/_header (0.1ms)
 Completed in 32ms (View: 22, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:01:52) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.3ms)
+Completed in 1064ms (View: 680, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-16 13:01:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/icon_close_24.png" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:08:05) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (44.6ms)
+Completed in 324ms (View: 195, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:23:44) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (27.2ms)
+Completed in 520ms (View: 337, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:24:19) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 54ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:25:50) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 76ms (View: 61, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:27:30) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.2ms)
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:28:08) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 141ms (View: 129, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:28:44) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-03-16 13:28:57) [POST]
+  Parameters: {"commit"=>"Submit", "purchase"=>{"zip"=>"20175", "buy"=>"yes", "why"=>"I like the move it move it", "email"=>"athayde@gmail.com"}, "authenticity_token"=>"Hcf09tKEVnW/+/wQ5l6GgJQcK3QFe6eQefuVKPDiFfU="}
+Redirected to http://localhost:3002/pages
+Completed in 211ms (DB: 0) | 302 Found [http://localhost/purchases]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-16 13:28:58) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 33ms (View: 22, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-16 13:28:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/icon_close_24.png" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

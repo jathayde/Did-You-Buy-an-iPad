@@ -17,6 +17,9 @@
   
   <div class="container">
     <section>
+      <% unless flash[:error].blank? %><p class="notice error"><%= flash[:error] %></p><% end %>
+      <% unless flash[:confirm].blank? %><p class="notice confirm"><%= flash[:confirm] %></p><% end %>
+      <% unless flash[:notice].blank? %><p class="notice normal"><%= flash[:notice] %></p><% end %>
     <%#= render_flash_messages %>
     
     <%= yield %>
@@ -30,7 +33,8 @@
 <footer>
   <div class="container">
     <div class="span-24">            
-      <p>We are not affiliated with Apple in any way, this is just some fun we had on a Friday</p>
+      <p class="footer">Built by Doug March (<%= link_to "web", "http://www.marchdoe.com" %> | <%= link_to "twitter", "http://www.twitter.com/marchdoe" %>) and John Athayde (<%= link_to "web", "http://www.boboroshi.com" %> | <%= link_to "twitter", "http://www.twitter.com/boboroshi" %>)</p>
+      <p class="footer disclaimer">We are not affiliated with Apple in any way, this is just some fun we had on a Friday.</p>
     </div>
   </div>
 </footer>

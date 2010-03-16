@@ -41,6 +41,9 @@ p           { margin: 0 0 1.5em; }
 p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
+p.footer { margin: 0; padding: 0 0 5px 0;}
+p.footer.disclaimer {color: #999;}
+
 /*a:link, 
 a:visited 	{ color:#4083A9; text-decoration:none; }*/
 a:active 	{ outline: none; }
