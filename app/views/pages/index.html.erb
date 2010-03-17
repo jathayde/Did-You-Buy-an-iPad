@@ -17,8 +17,8 @@
       <fieldset>
         <ul>
           <li class="inline" style="padding-left: 50px; ">
-            <label for="purchase_buy">Yes <%= f.radio_button :buy, :yes %></label>
-            <label for="purchase_buy">No <%= f.radio_button :buy, :no %></label>
+            <label for="purchase_buy">Yes <%= f.radio_button :buy, true, {:checked => true} %></label>
+            <label for="purchase_buy">No <%= f.radio_button :buy, false %></label>
           </li>
           
           <li class="inline center">

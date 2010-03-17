@@ -3,10 +3,10 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.new(params[:purchase])
 
     if @purchase.save
-      flash[:notice] = 'Thanks!'
+      flash[:confirm] = "Thanks! We've recorded it and will map it soon!"
     else
-      flash[:error] = 'That didn\'t work, yo'
+      flash[:error] = "#{@purchase.errors.full_messages.join("<br/>")}"
     end
-    redirect_to(pages_path)
+    redirect_to(root_path)
   end
 end
