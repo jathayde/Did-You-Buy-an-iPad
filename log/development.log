@@ -1405,3 +1405,4 @@ Rendering template within layouts/application
 Rendering pages/index
 Rendered layouts/_header (0.1ms)
 Completed in 28ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mPurchase Load (1.1ms)[0m   [0;1mSELECT * FROM "purchases" [0m
