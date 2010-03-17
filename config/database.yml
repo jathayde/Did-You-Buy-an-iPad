@@ -18,7 +18,7 @@ test:
 production:
   adapter: mysql
   encoding: utf-8
-  database: ipad_production
+  database: ipad
   username: root
   password: root
   host: 127.0.0.1
