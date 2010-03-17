@@ -29,11 +29,13 @@
           <li class="inline center">
             <%= f.label :email, "Email" %>
             <%= f.text_field :email, :class => "text email" %>
+            <p class="note">We are not giving these away and only require for uniqueness.</p>
           </li>
 
           <li class="inline center">
             <%= f.label :zip, "Zip Code" %>
             <%= f.text_field :zip, :class => "text" %>
+            <p class="note">Once we have enough data we'll be mapping, so that's why we need this.</p>
           </li>
           
           <li class="submit">

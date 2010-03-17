@@ -1391,3 +1391,17 @@ Rendering template within layouts/application
 Rendering pages/index
 Rendered layouts/_header (0.1ms)
 Completed in 37ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-17 10:30:37) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 37ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-17 10:30:45) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_header (0.1ms)
+Completed in 28ms (View: 18, DB: 0) | 200 OK [http://localhost/]
