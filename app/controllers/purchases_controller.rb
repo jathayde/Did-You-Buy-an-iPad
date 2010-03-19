@@ -4,6 +4,7 @@ class PurchasesController < ApplicationController
 
     if @purchase.save
       flash[:confirm] = "Thanks! We've recorded it and will map it soon!"
+      Notifications.deliver_new_purchase(@purchase)
     else
       flash[:error] = "#{@purchase.errors.full_messages.join("<br/>")}"
     end
